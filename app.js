@@ -105,9 +105,7 @@ function updateMatchMetaData(match, curMatch) {
     let minutes = duration.getMinutes();
     let seconds = duration.getSeconds();
 
-    console.log(`Game started on ${date} and lasted for ${minutes}:${seconds}`);
     document.getElementById("gameMetaData").innerText += ` (${date}) (${minutes}m ${seconds}s Game Duration)`
-
 }
 
 function resetArrows() {
