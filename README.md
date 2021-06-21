@@ -5,3 +5,6 @@
 
 # Why I made it
 - I made this to learn JavaScript/HTML/CSS mainly. I also incorporated a back-end server made in nodeJs with the express framework to hide the api key. I deployed this server in a Heroku app.
+
+# Active GitHub Pages Link
+- https://husamsaleem.github.io/lol-profiler/
