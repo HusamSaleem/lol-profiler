@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>League of Legends API Test</title>
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+<!-- Search bar -->
+<div class="search">
+    <input id="summonerNameInput" type="text" name="" placeholder="Enter Summoner Name"></input>
+    <button onclick="getAllSummonerInfo()">
+        <i class="fas fa-search"></i>
+    </button>
+</div>
+
+<div class="alert hide">
+    <span class="fas fa-exclamation-circle"></span>
+    <span class="msg">Error: Something bad happened :(</span>
+    <span class="close-btn" onclick="closeErrorPopup()">
+        <span class="fas fa-times" onclick="closeErrorPopup()"></span>
+    </span>
+</div>
+
+<div class="loader-container">
+    <div class="loading-spinner hide"></div>
+</div>
+
+<div class="tableContainer">
+    <span id="gameMetaData"></span >
+    <!-- Table for matches -->
+    <table class="matchTable">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Champion</th>
+            <th>Kills / Deaths / Assists</th>
+            <th>CS</th>
+            <th>Damage Dealt To Champions</th>
+            <th>Gold Earned</th>
+            <th>Win</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        </tbody>
+    </table>
+
+    <button class='matchNavBtn' id="prevGameBtn" onclick="loadPrevMatchInfo()" style="visibility: hidden">
+        <i class="fas fa-arrow-left"></i>
+    </button>
+
+    <button class='matchNavBtn' id="nextGameBtn" onclick="loadNextMatchInfo()">
+        <i class="fas fa-arrow-right"></i>
+    </button>
+</div>
+
+<!-- Containers for player information -->
+<div class="playerProfile">
+    <h2 id="name"></h2>
+    <h2 id="level"></h2>
+    <h2 id="rank"></h2>
+    <h2 id="winsLosses"></h2>
+    <h2 id="winRatio"></h2>
+    <h2 id="leaguePoints"></h2>
+</div>
+
+
+<script type="application/json" src="champions.json"></script>
+<script type="application/json" src="queueType.json.json"></script>
+<script src="./app.js"></script>
+</body>
+
+</html>
