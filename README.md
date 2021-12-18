@@ -10,4 +10,4 @@
 - I made this to learn JavaScript/HTML/CSS mainly. I also incorporated a back-end server made in nodeJs with the express framework to hide the api key. I deployed this server in a Heroku app.
 
 # Where is the server?
-- There server repository is currently private because I do not want to expose the API key. However, if you really want to see it, message me. 
+- In a seperate repo: https://github.com/HusamSaleem/lol-profiler-server
